@@ -390,8 +390,11 @@ main {
   inset: 1px;
   border-radius: inherit;
   background: var(--eerie-black-1);
-  transition: var(--transition-1);
   z-index: -1;
+}
+
+.info_more-btn:hover {
+  color: var(--air-force-blue);
 }
 
 .info_more-btn span {
@@ -458,7 +461,7 @@ main {
 }
 
 .social-item .social-link:hover {
-  color: var(--onyx);
+  color: var(--air-force-blue);
 }
 
 /*-----------------------------------*\
@@ -487,7 +490,7 @@ main {
 }
 
 .navbar-link {
-  color: var(--light-gray);
+  color: var(--white-1);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
@@ -495,7 +498,7 @@ main {
 
 .navbar-link:hover,
 .navbar-link:focus {
-  color: var(--light-gray-70);
+  color: var(--air-force-blue);
 }
 
 .navbar-link.active {
@@ -716,14 +719,14 @@ main {
   position: absolute;
   top: 15px;
   right: 15px;
-  background: var(--onyx);
+  background: var(--air-force-blue);
   border-radius: 8px;
   width: 32px;
   height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--jet);
+  color: var(--white-1);
   font-size: 18px;
   opacity: 0.7;
 }
@@ -751,6 +754,7 @@ main {
 
 .modal-title {
   margin-bottom: 4px;
+  color: var(--air-force-blue);
 }
 
 .modal-content time {
@@ -1274,7 +1278,7 @@ textarea.form-input::-webkit-resizer {
   position: relative;
   width: 100%;
   background: var(--border-gradient-onyx);
-  color: var(--air-force-blue);
+  color: var(--white-1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1296,6 +1300,10 @@ textarea.form-input::-webkit-resizer {
   border-radius: inherit;
   z-index: -1;
   transition: var(--transition-1);
+}
+
+.form-btn:hover {
+  color: var(--air-force-blue);
 }
 
 .form-btn ion-icon {
@@ -1540,6 +1548,7 @@ textarea.form-input::-webkit-resizer {
   .testimonials-item-title {
     margin-bottom: 10px;
     margin-left: 95px;
+    color: var(--air-force-blue);
   }
 
   .testimonials-text {
