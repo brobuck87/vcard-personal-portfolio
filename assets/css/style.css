@@ -55,7 +55,7 @@
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: #16161a;
-  --off-white: #fffffe;
+  --off-white: #f7f7f7;
   --sky-blue: #83d7ec;
   --white-2: hsl(0, 0%, 98%);
   --oxford-blue: #0b1239;
@@ -476,7 +476,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: var(--light-gray);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -493,7 +493,7 @@ main {
 }
 
 .navbar-link {
-  color: var(--sky-blue);
+  color: var(--onyx);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
@@ -501,11 +501,14 @@ main {
 
 .navbar-link:hover,
 .navbar-link:focus {
-  color: var(--oxford-blue);
+  color: var(--munsell-blue);
 }
 
 .navbar-link.active {
-  color: #83d7ec;
+  background: var(--sky-blue);
+}
+.navbar-link.active:hover {
+  color: var(--munsell-blue);
 }
 
 /*-----------------------------------*\
@@ -1308,7 +1311,7 @@ textarea.form-input::-webkit-resizer {
 }
 
 .form-btn:hover {
-  color: var(--oxford-blue);
+  color: var(--off-white);
 }
 
 .form-btn ion-icon {
